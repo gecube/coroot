@@ -107,7 +107,6 @@ func (c *Constructor) LoadWorld(ctx context.Context, from, to timeseries.Time, s
 		if !errors.Is(err, ErrUnknownQuery) {
 			return nil, err
 		}
-		klog.Warningln(err)
 	}
 
 	pjs := promJobStatuses{}
